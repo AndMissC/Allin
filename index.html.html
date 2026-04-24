@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>短剧演员招募活动-全景传媒</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #000;
+            color: #fff;
+            font-family: "微软雅黑", "Noto Sans SC", sans-serif;
+            line-height: 1.6;
+        }
+        .page {
+            width: 100%;
+            min-height: 100vh;
+            padding: 30px 20px;
+            position: relative;
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("https://picsum.photos/750/1334?random=bg1") no-repeat center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 15px;
+        }
+        .main-title {
+            background: #ffd600;
+            color: #000;
+            padding: 5px 10px;
+            text-align: center;
+            margin: 15px 0;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .sub-title {
+            text-align: center;
+            color: #ccc;
+            font-size: 14px;
+        }
+        h2 {
+            color: #ff9500;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        .card {
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            background: linear-gradient(90deg, #ff5100, #ff9500);
+            color: #fff;
+            text-align: center;
+            padding: 14px;
+            border-radius: 50px;
+            border: none;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .step {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+        }
+        .step-num {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #ff5100;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        .form-box{
+            width: 100%;
+            height: 620px;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            background: #fff;
+        }
+        .float-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #ff5100;
+            color: #fff;
+            border: none;
+            font-size: 14px;
+            font-weight: bold;
+            box-shadow: 0 0 15px rgba(255,81,0,0.5);
+            cursor: pointer;
+            z-index: 999;
+        }
+        .footer-text {
+            text-align: center;
+            color: #eee;
+            font-size: 12px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 第1屏：封面 -->
+    <div class="page">
+        <h1>短剧演员招募活动</h1>
+        <div class="main-title">别再刷视频了！来演短剧，拿片酬+带货分成</div>
+        <p class="sub-title">「星剧人计划——全网寻找100个最会演的短视频达人」</p>
+        <a href="#form" class="btn">立即报名，抢占C位</a>
+    </div>
+
+    <!-- 第2屏：行业红利 -->
+    <div class="page">
+        <h2>为什么你一定要抓住短剧风口？</h2>
+        <div class="card">
+            <p>🔥 短剧=年度最大流量洼地</p>
+            <p style="color:#ccc; font-size:14px;">单部爆款播放量10亿+，演员快速涨粉变现</p>
+        </div>
+        <div class="card">
+            <p>💰 片酬+直播分成=双重收益</p>
+            <p style="color:#ccc; font-size:14px;">优质演员稳定接单，电商佣金分成丰厚</p>
+        </div>
+        <div class="card">
+            <p>👑 打造个人影视代表作</p>
+            <p style="color:#ccc; font-size:14px;">官方剧组孵化，对接全平台影视资源</p>
+        </div>
+        <a href="#form" class="btn">我也要转型</a>
+    </div>
+
+    <!-- 第3屏：专属权益 -->
+    <div class="page">
+        <h2>入选「星剧人计划」，你将获得</h2>
+        <div class="card">💰 剧组保底片酬，上不封顶</div>
+        <div class="card">🎁 剧集爆款流量额外奖金</div>
+        <div class="card">📈 直播带货流量&佣金扶持</div>
+        <div class="card">🎓 免费镜头感+表演专业培训</div>
+        <div class="card">🏠 唯影影视基地专属拍摄场地</div>
+        <div class="card">📣 全景传媒全平台流量曝光</div>
+        <a href="#form" class="btn">我要报名，拿权益</a>
+    </div>
+
+    <!-- 第4屏：报名条件 -->
+    <div class="page">
+        <h2>我们需要这样的你（符合任意一条即可）</h2>
+        <div class="card">✅ 短视频达人、自媒体博主优先</div>
+        <div class="card">✅ 镜头感强，热爱表演、表现力强</div>
+        <div class="card">✅ 有直播、剧情拍摄相关经验</div>
+        <div class="card">✅ 接受短期集中进组拍摄</div>
+        <div class="card">✅ 新人零基础可培养，无门槛报名</div>
+        <p style="color:#ff9500; margin-top:15px; font-size:14px;">⭐ 形象气质佳、表现力优秀优先录取</p>
+        <a href="#form" class="btn">我符合条件，立即报名</a>
+    </div>
+
+    <!-- 第5屏：报名流程 -->
+    <div class="page">
+        <h2>4步成为短剧主角</h2>
+        <div class="step">
+            <div class="step-num">①</div>
+            <div><p>线上填写表单报名</p></div>
+        </div>
+        <div class="step">
+            <div class="step-num">②</div>
+            <div><p>官方资料初审筛选</p></div>
+        </div>
+        <div class="step">
+            <div class="step-num">③</div>
+            <div><p>线上面试试戏沟通</p></div>
+        </div>
+        <div class="step">
+            <div class="step-num">④</div>
+            <div><p>签约合作｜唯影影视基地进组开拍</p></div>
+        </div>
+        <p style="margin-top:20px; color:#ccc;">📍 拍摄地点：唯影影视基地<br>📌 剧组统一安排食宿、路费补贴</p>
+    </div>
+
+    <!-- 第6屏：在线报名 已替换你的表单链接 -->
+    <div class="page" id="form">
+        <h2 style="text-align:center;">在线报名 免费入驻</h2>
+        <iframe class="form-box" src="https://jsjform.com/f/VvHJrL"></iframe>
+        <div class="footer-text">
+            <p>主办方：全景传媒</p>
+            <p>合作平台：抖音 | 快手 | 视频号</p>
+        </div>
+    </div>
+
+    <button class="float-btn" onclick="document.getElementById('form').scrollIntoView({behavior:'smooth'})">报名</button>
+</body>
+</html>
